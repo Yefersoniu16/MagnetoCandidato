@@ -17,6 +17,10 @@ public class RegisterBronze {
             located(By.id("email-info_email"));
     public static final Target INPUT_CONFIRMATION_EMAIL_REGISTER  = Target.the("Campo donde va el correo de Confirmacon").
             located(By.id("email-info_emailConfirmation"));
+    public static final Target CHECK_DATA_PROCESSING  = Target.the("Chequeo tratamiento de datos").
+            located(By.id("email-info_auxTerms"));
+    public static final Target FINAL_CHECK_CONDITIONS  = Target.the("Chequeo termino de condiciones").
+            located(By.id("email-info_acceptTerms"));
  public static final Target BUTTON_CREATE_ACCOUNT  = Target.the("Boton crear cuenta").
          located(By.xpath("(//button[@class='ant-btn ant-btn-lg widget-signup__action--next'])"));
     public static final Target BUTTON_NEXT  = Target.the("Boton siguiente").
@@ -36,9 +40,13 @@ public class RegisterBronze {
     public static final Target BUTTON_CONTINUE_REGISTER_SILVER  = Target.the("Boton para continuar con el registro").
             located(By.id("account-created_continue"));
     public static final Target INPUT_CATEGORIES  = Target.the("Campo donde se ingresan las categorias laborales ").
-            located(By.xpath("//span[@class='ant-select-selection-item']"));
-    public static final Target SELECT_CATEGORIES  = Target.the("Seleccionar una categorias laboral").
-            located(By.xpath("//div[@class='ant-select-item-option-content']"));
+            located(By.xpath("//button[@class='mg_drop_down_button_magneto-ui-drop-down-button_1yeqt']"));
+    public static final Target SELECT_CATEGORIES_ONE  = Target.the("Seleccionar una categorias laboral").
+            located(By.xpath("/html/body/div[5]/div[3]/button[1]"));
+    public static final Target SELECT_CATEGORIES_TWO  = Target.the("Seleccionar una categorias laboral").
+            located(By.xpath("(//button[@class='mg_select_item_magneto-ui-select-item_r3q4f '])[2]"));
+    public static final Target SELECT_CATEGORIES_THREE  = Target.the("Seleccionar una categorias laboral").
+            located(By.xpath("(//button[@class='mg_select_item_magneto-ui-select-item_r3q4f '])[3]"));
     public static final Target INPUT_PROFESSION  = Target.the("Campo donde va la profession").
             located(By.id("select-job-sectors_titleOrProfession"));
     public static final Target INPUT_FREQUENCY  = Target.the("Campo donde va la frecuencia de salario").

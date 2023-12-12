@@ -91,14 +91,14 @@
 
 1 Scenarios (?[31m1 failed?[0m)
 3 Steps (?[31m1 failed?[0m, ?[36m1 skipped?[0m, ?[32m1 passed?[0m)
-0m17,325s
+0m51,257s
 
 net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
 	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1149)
 	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:954)
 	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1229)
 	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$sEX1hw2p.performAs$accessor$dF1vpO0x(Unknown Source)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$vbBOeQXK.performAs$accessor$SdsYHjy6(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -109,12 +109,12 @@ net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expect
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:74)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$sEX1hw2p.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$vbBOeQXK.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at com.magnetocandidato.tasks.RegisterUserGold.performAs(RegisterUserGold.java:36)
-	at com.magnetocandidato.tasks.RegisterUserGold$ByteBuddy$9q8bABDm.performAs$accessor$FAIXpgS2(Unknown Source)
+	at com.magnetocandidato.tasks.RegisterUserGold.performAs(RegisterUserGold.java:65)
+	at com.magnetocandidato.tasks.RegisterUserGold$ByteBuddy$y23sVylf.performAs$accessor$v7v6HgLZ(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -125,23 +125,20 @@ net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expect
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:74)
-	at com.magnetocandidato.tasks.RegisterUserGold$ByteBuddy$9q8bABDm.performAs(Unknown Source)
+	at com.magnetocandidato.tasks.RegisterUserGold$ByteBuddy$y23sVylf.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
 	at com.magnetocandidato.stepdefinitions.RegisterUserSteDefinition.theUserRegistersGold(RegisterUserSteDefinition.java:45)
 	at ?.the user registers gold(src/test/resources/features/register_user.feature:19)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.xpath: (//button[@class='ant-btn ant-btn-lg widget-signup__action--next']) to be enabled (tried for 5 second(s) with 100 milliseconds interval)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PSY-E154', ip: '192.168.1.146', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
-Driver info: driver.version: unknown
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.id: add-experiences_occupationId to be enabled (tried for 5 second(s) with 100 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1146)
 	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:954)
 	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1229)
 	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$sEX1hw2p.performAs$accessor$dF1vpO0x(Unknown Source)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$vbBOeQXK.performAs$accessor$SdsYHjy6(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -152,12 +149,12 @@ Driver info: driver.version: unknown
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:74)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$sEX1hw2p.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$vbBOeQXK.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at com.magnetocandidato.tasks.RegisterUserGold.performAs(RegisterUserGold.java:36)
-	at com.magnetocandidato.tasks.RegisterUserGold$ByteBuddy$9q8bABDm.performAs$accessor$FAIXpgS2(Unknown Source)
+	at com.magnetocandidato.tasks.RegisterUserGold.performAs(RegisterUserGold.java:65)
+	at com.magnetocandidato.tasks.RegisterUserGold$ByteBuddy$y23sVylf.performAs$accessor$v7v6HgLZ(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -168,7 +165,7 @@ Driver info: driver.version: unknown
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:74)
-	at com.magnetocandidato.tasks.RegisterUserGold$ByteBuddy$9q8bABDm.performAs(Unknown Source)
+	at com.magnetocandidato.tasks.RegisterUserGold$ByteBuddy$y23sVylf.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
@@ -230,6 +227,36 @@ Driver info: driver.version: unknown
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#add\-experiences_occupationId&quot;}
+  (Session info: chrome=120.0.6099.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PSY-E154', ip: '192.168.1.146', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\TALENTA\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64479}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c084f8769f4b1756d87861fbb68dcd0
+*** Element info: {Using=id, value=add-experiences_occupationId}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
+	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:221)
+	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:63)
+	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:55)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 93 more
 
 </pre>
 </span>
@@ -276,7 +303,7 @@ TEST STARTED: Make gold Record
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.3</a> at 12/12/2023, 2:25:53 p.m.</p>
+<a href="http://www.gradle.org">Gradle 8.3</a> at 12/12/2023, 11:24:22 p.m.</p>
 </div>
 </div>
 </body>

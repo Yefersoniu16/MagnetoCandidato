@@ -17,7 +17,7 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 public class RegisterUserBronze implements Task {
     private int code;
     private int code2;
-    private Random random = new Random();
+    private Random  random = new Random();
     @Override
     public <T extends Actor> void performAs(T actor) {
 
@@ -56,11 +56,11 @@ public class RegisterUserBronze implements Task {
                 Click.on(BUTTON_NEXT),
                 //Click.on(BUTTON_CONTINUE_REGISTER_SILVER),//Bronce
                 Click.on(INPUT_CATEGORIES),
-                Click.on(SELECT_CATEGORIES),
+                //Click.on(SELECT_CATEGORIES),
                 Click.on(INPUT_CATEGORIES),
-                Click.on(SELECT_CATEGORIES),
+               // Click.on(SELECT_CATEGORIES),
                 Click.on(INPUT_CATEGORIES),
-                Click.on(SELECT_CATEGORIES),
+               // Click.on(SELECT_CATEGORIES),
                 //Click.on(BUTTON_NEXT),
                 Enter.theValue(PROFESSION).into(INPUT_PROFESSION).thenHit(Keys.ENTER),
                 Click.on(INPUT_FREQUENCY),
