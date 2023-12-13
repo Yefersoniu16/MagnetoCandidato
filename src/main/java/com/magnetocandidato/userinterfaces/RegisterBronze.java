@@ -77,19 +77,19 @@ public class RegisterBronze {
     public static final Target INPUT_NAME_POST  = Target.the("Espacio donde va el nombre del cargo").
                 located(By.id("add-experiences_position"));
     public static final Target INPUT_EQUIVALENT_CHARGE  = Target.the("Espacio donde va el nombre del cargo Equivalente").
-            located(By.id("add-experiences_occupationId"));
+            located(By.xpath("(//button[@class='mg_drop_down_button_magneto-ui-drop-down-button_1yeqt'])"));
     public static final Target CLICK_EQUIVALENT_CHARGE  = Target.the("Click en el cargo").
-            located(By.xpath("(//div[@class='ant-select-item-option-content'])[1]"));
+            located(By.xpath("//button[@class='mg_select_item_magneto-ui-select-item_o5mff  ']"));
     public static final Target INPUT_LEVEL_CHARGE  = Target.the("Espacio donde va el nivel del cargo ").
-            located(By.id("add-experiences_level"));
+            located(By.xpath("(//button[@class='mg_drop_down_button_magneto-ui-drop-down-button_1yeqt'])[2]"));
     public static final Target CLICK_LEVEL_CHARGE  = Target.the("Click en el nivel del cargo").
-            located(By.xpath("(//DIV[@class='ant-select-item-option-content'])[11]"));
+            located(By.xpath("(//button[@class='mg_select_item_magneto-ui-select-item_o5mff  '])"));
     public static final Target INPUT_COMPANY  = Target.the("Espacio donde va La empresa ").
             located(By.id("add-experiences_company"));
     public static final Target INPUT_CITY_WHERE_WORK = Target.the("Espacio donde va La ciudad donde trabajo ").
             located(By.id("add-experiences_cityId"));
     public static final Target CLICK_CITY_WORK = Target.the("Click en el nivel del cargo").
-            located(By.xpath("(//DIV[@class='ant-select-item-option-content'])[20]"));
+            located(By.xpath("//div[@class='ant-select-item-option-content']"));
     public static final Target INPUT_WORK_DESCRIPTION = Target.the("Espacio donde va La Descripción de trabajo ").
             located(By.id("add-experiences_description"));
     public static final Target INPUT_CURRENT_WORK_CHECK = Target.the("Espacio donde va el check de trabajo actual ").
@@ -109,9 +109,9 @@ public class RegisterBronze {
     public static final Target INPUT_COUNTRY_STUDY = Target.the("Espacio donde va el Pais de estudio").
             located(By.id("add-studies_countryId"));
     public static final Target INPUT_TYPE_STUDY = Target.the("Espacio donde va el tipo de estudio").
-            located(By.id("add-studies_studyType"));
-    public static final Target CLICK_TYPE_STUDY = Target.the("Clock para seleccionar el estudio").
-            located(By.xpath("//*[@id=\"add-studies\"]/div/div[5]/div/div/div/div/div[2]/div/div/div/div[2]/div[1]/div/div/div[7]/div"));
+            located(By.xpath("//button[@class='mg_drop_down_button_magneto-ui-drop-down-button_1yeqt']"));
+    public static final Target CLICK_TYPE_STUDY = Target.the("Click para seleccionar el estudio").
+            located(By.xpath("(//button[@class='mg_select_item_magneto-ui-select-item_o5mff  '])[5]"));
     public static final Target INPUT_CURRENT_STUDY_CHECK = Target.the("Espacio donde va el check de estudio actual ").
             located(By.id("add-studies_inProgress"));
     public static final Target INPUT_START_DATE_STUDY = Target.the("Espacio donde va Fecha de inicio").
@@ -155,9 +155,9 @@ public class RegisterBronze {
     public static final Target CIVIL_STATUS = Target.the("estado civil").
             located(By.xpath("(//label[@class='ant-radio-wrapper'])[1]"));
     public static final Target INPUT_IDENTIFICATION  = Target.the("Input type de identificacion").
-            located(By.id("civilStatus-numberIdentification-type_identificationType"));
+            located(By.xpath("(//button[@class='mg_drop_down_button_magneto-ui-drop-down-button_1yeqt'])"));
     public static final Target IDENTIFICATION_DOCUMENT = Target.the("Documento de identidad cedula").
-            located(By.xpath("(//div[@class='ant-select-item-option-content'])[1]"));
+            located(By.xpath("(//button[@class='mg_select_item_magneto-ui-select-item_o5mff  '])"));
     public static final Target NUMBER_IDENTIFICATION  = Target.the("Input numero de identificacion").
             located(By.id("civilStatus-numberIdentification-type_identificationNumber"));
     public static final Target ADD_CERTIFICATION = Target.the("Agregar Certificado").

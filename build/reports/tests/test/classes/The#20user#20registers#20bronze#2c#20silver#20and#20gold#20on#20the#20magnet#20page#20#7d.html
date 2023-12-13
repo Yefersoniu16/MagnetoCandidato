@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">50.823s</div>
+<div class="counter">2m9.02s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,170 +79,35 @@
 <a name="Make gold Record"></a>
 <h3 class="failures">Make gold Record</h3>
 <span class="code">
-<pre>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
-	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1149)
-	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:954)
-	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1229)
-	at app//net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
-	at app//net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$vbBOeQXK.performAs$accessor$SdsYHjy6(Unknown Source)
-	at java.base@9.0.4/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@9.0.4/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@9.0.4/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@9.0.4/java.lang.reflect.Method.invoke(Method.java:564)
-	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:466)
-	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:450)
-	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:425)
-	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:74)
-	at app//net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$vbBOeQXK.performAs(Unknown Source)
-	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at app//com.magnetocandidato.tasks.RegisterUserGold.performAs(RegisterUserGold.java:65)
-	at app//com.magnetocandidato.tasks.RegisterUserGold$ByteBuddy$y23sVylf.performAs$accessor$v7v6HgLZ(Unknown Source)
-	at java.base@9.0.4/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@9.0.4/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@9.0.4/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@9.0.4/java.lang.reflect.Method.invoke(Method.java:564)
-	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:466)
-	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:450)
-	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:425)
-	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:74)
-	at app//com.magnetocandidato.tasks.RegisterUserGold$ByteBuddy$y23sVylf.performAs(Unknown Source)
-	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at app//com.magnetocandidato.stepdefinitions.RegisterUserSteDefinition.theUserRegistersGold(RegisterUserSteDefinition.java:45)
+<pre>java.lang.AssertionError: 
+Expected: an element that is visible
+     but: no matching element found by css: Esta es la descripcion que se tiene para los campos que lo requieran Esta es la descripcion que se tiene para los campos que lo requieran
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
+	at net.serenitybdd.screenplay.waits.WaitUntilBuilder$1.performAs(WaitUntilBuilder.java:29)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.performSilently(Actor.java:194)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:167)
+	at com.magnetocandidato.tasks.RegisterUserGold.performAs(RegisterUserGold.java:153)
+	at com.magnetocandidato.tasks.RegisterUserGold$ByteBuddy$Mqas4WkE.performAs$accessor$UspfOjo7(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:466)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:450)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:425)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:74)
+	at com.magnetocandidato.tasks.RegisterUserGold$ByteBuddy$Mqas4WkE.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at com.magnetocandidato.stepdefinitions.RegisterUserSteDefinition.theUserRegistersGold(RegisterUserSteDefinition.java:45)
 	at ✽.the user registers gold(src/test/resources/features/register_user.feature:19)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.id: add-experiences_occupationId to be enabled (tried for 5 second(s) with 100 milliseconds interval)
-	at app//org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at app//org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1146)
-	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:954)
-	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1229)
-	at app//net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
-	at app//net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$vbBOeQXK.performAs$accessor$SdsYHjy6(Unknown Source)
-	at java.base@9.0.4/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@9.0.4/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@9.0.4/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@9.0.4/java.lang.reflect.Method.invoke(Method.java:564)
-	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:466)
-	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:450)
-	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:425)
-	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:74)
-	at app//net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$vbBOeQXK.performAs(Unknown Source)
-	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at app//com.magnetocandidato.tasks.RegisterUserGold.performAs(RegisterUserGold.java:65)
-	at app//com.magnetocandidato.tasks.RegisterUserGold$ByteBuddy$y23sVylf.performAs$accessor$v7v6HgLZ(Unknown Source)
-	at java.base@9.0.4/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@9.0.4/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@9.0.4/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@9.0.4/java.lang.reflect.Method.invoke(Method.java:564)
-	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:466)
-	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:450)
-	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:425)
-	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:74)
-	at app//com.magnetocandidato.tasks.RegisterUserGold$ByteBuddy$y23sVylf.performAs(Unknown Source)
-	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at app//com.magnetocandidato.stepdefinitions.RegisterUserSteDefinition.theUserRegistersGold(RegisterUserSteDefinition.java:45)
-	at java.base@9.0.4/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@9.0.4/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@9.0.4/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@9.0.4/java.lang.reflect.Method.invoke(Method.java:564)
-	at app//cucumber.runtime.Utils$1.call(Utils.java:31)
-	at app//cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at app//cucumber.runtime.Utils.invoke(Utils.java:25)
-	at app//cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
-	at app//cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
-	at app//cucumber.api.TestStep.executeStep(TestStep.java:102)
-	at app//cucumber.api.TestStep.run(TestStep.java:83)
-	at app//cucumber.api.TestCase.run(TestCase.java:58)
-	at app//cucumber.runner.Runner.runPickle(Runner.java:80)
-	at app//cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
-	at app//cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at app//cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at app//org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at app//org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at app//cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
-	at app//cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)
-	at app//cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
-	at app//org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at app//org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at app//cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)
-	at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:112)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:60)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:52)
-	at java.base@9.0.4/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@9.0.4/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@9.0.4/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@9.0.4/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#add\-experiences_occupationId&quot;}
-  (Session info: chrome=120.0.6099.71)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PSY-E154', ip: '192.168.1.146', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\TALENTA\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64479}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8c084f8769f4b1756d87861fbb68dcd0
-*** Element info: {Using=id, value=add-experiences_occupationId}
-	at java.base@9.0.4/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base@9.0.4/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base@9.0.4/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base@9.0.4/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at app//org.openqa.selenium.By$ById.findElement(By.java:188)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at app//net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
-	at app//net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
-	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:221)
-	at app//net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:63)
-	at app//net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:55)
-	at app//org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 93 more
 </pre>
 </span>
 </div>
@@ -259,7 +124,7 @@ Session ID: 8c084f8769f4b1756d87861fbb68dcd0
 </thead>
 <tr>
 <td class="failures">Make gold Record</td>
-<td class="failures">50.823s</td>
+<td class="failures">2m9.02s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -267,23 +132,23 @@ Session ID: 8c084f8769f4b1756d87861fbb68dcd0
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>3769
-6669
+<pre>4238
+4026
 </pre>
 </span>
 </div>
 <div id="tab3" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>dic. 12, 2023 11:23:27 P.M. org.openqa.selenium.remote.DesiredCapabilities chrome
+<pre>dic. 13, 2023 6:17:14 P.M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, acceptSslCerts: true, browserName: chrome, chrome.switches: --start-maximized;--disable..., goog:chromeOptions: {args: [--start-maximized, --disable-extensions, --disable-infobars, --no-sandbox, --disable-popup-blocking, --disable-default-apps, --allow-popups-during-page-..., --disable-extensions-file-a...], extensions: [], prefs: {safebrowsing.enabled: false}}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, unhandledPromptBehavior: ignore, version: }
-Starting ChromeDriver 120.0.6099.71 (9729082fe6174c0a371fc66501f5efc5d69d3d2b-refs/branch-heads/6099_56@{#13}) on port 8069
+Starting ChromeDriver 120.0.6099.71 (9729082fe6174c0a371fc66501f5efc5d69d3d2b-refs/branch-heads/6099_56@{#13}) on port 28402
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-dic. 12, 2023 11:23:29 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+dic. 13, 2023 6:17:16 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
            __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
@@ -295,8 +160,8 @@ INFORMACIÓN: Detected dialect: W3C
 
 TEST FAILED: Make gold Record
 --------------------------------------------------------------------------
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Yeferson clicks on Espacio donde va el nombre del cargo Equivalente
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected enabled element was not enabled
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Yeferson register user gold
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected: an element that is visible but: no matching element found by css: Esta es la descripcion que se tiene para los campos que lo requieran Esta es la descripcion que se tiene para los campos que lo requieran
 </pre>
 </span>
 </div>
@@ -308,7 +173,7 @@ TEST FAILED: Make gold Record
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.3</a> at 12/12/2023, 11:24:22 p.m.</p>
+<a href="http://www.gradle.org">Gradle 8.3</a> at 13/12/2023, 6:19:32 p.m.</p>
 </div>
 </div>
 </body>
