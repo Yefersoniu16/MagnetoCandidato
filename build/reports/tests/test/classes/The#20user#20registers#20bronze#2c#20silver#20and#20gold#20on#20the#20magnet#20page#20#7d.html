@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2m9.02s</div>
+<div class="counter">2m16.58s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,58 +61,16 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
+<a href="#tab1">Standard output</a>
 </li>
 <li>
-<a href="#tab2">Standard output</a>
-</li>
-<li>
-<a href="#tab3">Standard error</a>
+<a href="#tab2">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="Make gold Record"></a>
-<h3 class="failures">Make gold Record</h3>
-<span class="code">
-<pre>java.lang.AssertionError: 
-Expected: an element that is visible
-     but: no matching element found by css: Esta es la descripcion que se tiene para los campos que lo requieran Esta es la descripcion que se tiene para los campos que lo requieran
-	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
-	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
-	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
-	at net.serenitybdd.screenplay.waits.WaitUntilBuilder$1.performAs(WaitUntilBuilder.java:29)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at net.serenitybdd.screenplay.Actor.performSilently(Actor.java:194)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:167)
-	at com.magnetocandidato.tasks.RegisterUserGold.performAs(RegisterUserGold.java:153)
-	at com.magnetocandidato.tasks.RegisterUserGold$ByteBuddy$Mqas4WkE.performAs$accessor$UspfOjo7(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:466)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:450)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:425)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:74)
-	at com.magnetocandidato.tasks.RegisterUserGold$ByteBuddy$Mqas4WkE.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at com.magnetocandidato.stepdefinitions.RegisterUserSteDefinition.theUserRegistersGold(RegisterUserSteDefinition.java:45)
-	at ✽.the user registers gold(src/test/resources/features/register_user.feature:19)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -123,45 +81,43 @@ Expected: an element that is visible
 </tr>
 </thead>
 <tr>
-<td class="failures">Make gold Record</td>
-<td class="failures">2m9.02s</td>
-<td class="failures">failed</td>
+<td class="success">Make gold Record</td>
+<td class="success">2m16.58s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>4238
-4026
+<pre>3463
+3454
 </pre>
 </span>
 </div>
-<div id="tab3" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>dic. 13, 2023 6:17:14 P.M. org.openqa.selenium.remote.DesiredCapabilities chrome
+<pre>ene. 25, 2024 9:23:11 A.M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, acceptSslCerts: true, browserName: chrome, chrome.switches: --start-maximized;--disable..., goog:chromeOptions: {args: [--start-maximized, --disable-extensions, --disable-infobars, --no-sandbox, --disable-popup-blocking, --disable-default-apps, --allow-popups-during-page-..., --disable-extensions-file-a...], extensions: [], prefs: {safebrowsing.enabled: false}}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, unhandledPromptBehavior: ignore, version: }
-Starting ChromeDriver 120.0.6099.71 (9729082fe6174c0a371fc66501f5efc5d69d3d2b-refs/branch-heads/6099_56@{#13}) on port 28402
+Starting ChromeDriver 120.0.6099.71 (9729082fe6174c0a371fc66501f5efc5d69d3d2b-refs/branch-heads/6099_56@{#13}) on port 2686
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-dic. 13, 2023 6:17:16 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+ene. 25, 2024 9:23:13 A.M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
-           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
-  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
- (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
-  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
- (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
-          \_\                                                            
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
 
-TEST FAILED: Make gold Record
---------------------------------------------------------------------------
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Yeferson register user gold
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected: an element that is visible but: no matching element found by css: Esta es la descripcion que se tiene para los campos que lo requieran Esta es la descripcion que se tiene para los campos que lo requieran
+TEST PASSED: Make gold Record
+----------------------------------------------------------------------------
 </pre>
 </span>
 </div>
@@ -173,7 +129,7 @@ TEST FAILED: Make gold Record
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.3</a> at 13/12/2023, 6:19:32 p.m.</p>
+<a href="http://www.gradle.org">Gradle 8.3</a> at 25/01/2024, 9:25:46 a.m.</p>
 </div>
 </div>
 </body>

@@ -155,7 +155,7 @@ public class RegisterUserGold implements Task {
                 Click.on(BUTTON_SAVE_LOAD),
 
                 Click.on(BUTTON_NEXT),
-                WaitUntil.the(DESCRIPTION, WebElementStateMatchers.isVisible()).forNoMoreThan(50).seconds(),
+                WaitUntil.the(FIELD_TEXT_DESCRIPTION, WebElementStateMatchers.isVisible()).forNoMoreThan(50).seconds(),
                 Enter.theValue(DESCRIPTION).into(FIELD_TEXT_DESCRIPTION),
                 Click.on(BUTTON_NEXT));
 

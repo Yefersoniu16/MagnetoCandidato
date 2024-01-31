@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="The user registers bronze, silver and gold on the magnet page }" skipped="0" tests="1" time="128.21" timestamp="2023-12-13 06:17:12"><testcase name="Make gold Record"><failure message="&#10;Expected: an element that is visible&#10;     but: no matching element found by css: Esta es la descripcion que se tiene para los campos que lo requieran Esta es la descripcion que se tiene para los campos que lo requieran" type="java.lang.AssertionError">
-Expected: an element that is visible
-     but: no matching element found by css: Esta es la descripcion que se tiene para los campos que lo requieran Esta es la descripcion que se tiene para los campos que lo requieran</failure><system-err>
-Expected: an element that is visible
-     but: no matching element found by css: Esta es la descripcion que se tiene para los campos que lo requieran Esta es la descripcion que se tiene para los campos que lo requieran&#13;
-com.magnetocandidato.tasks.RegisterUserGold.performAs(RegisterUserGold.java:153)&#13;
-com.magnetocandidato.stepdefinitions.RegisterUserSteDefinition.theUserRegistersGold(RegisterUserSteDefinition.java:45)&#13;
-cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
-worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)&#13;
-worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)&#13;
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="The user registers bronze, silver and gold on the magnet page }" skipped="0" tests="1" time="135.92" timestamp="2024-01-25 09:23:10"><testcase name="Make gold Record"/></testsuite>

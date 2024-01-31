@@ -215,7 +215,7 @@ public class RegisterBronze {
     public static final Target SELECT_AVATAR= Target.the("Seleccionar avatar").
             located(By.xpath("//div[@class='mg_avatar_avatarComponent_1upgt']"));
     public static final Target SELECT_AVATAR_DIAMOND = Target.the("Seleccionar avatar Diamante").
-            located(By.xpath("//div[@class='mg_avatar_avatarComponent_f4h7b']"));
+            located(By.xpath("//div[@class='mg_avatar_avatarComponent_1upgt']//img"));
     public static final Target BUTTON_SETTING = Target.the("Boton de configuracion ").
             located(By.xpath("(//button[@class='mg_menu_icon_magneto-ui-menu-icon_on3ri '])[1]"));
     public static final Target BUTTON_DELETE = Target.the("Boton Eliminar la cuenta ").
